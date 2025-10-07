@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-left {
+    display: inline-block;
+    width: 60vw;
+    padding-left: 136px;
+    margin-top: 20%;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 80px;
+    color: #5D5D7D;
+    width: 368px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    margin: 15px 0;
+    opacity: 0.6;
+    color: #5D5D7D;
+    width: 540px;
+
+}
+
+.container-right {
+    display: inline-block;
+    position: absolute;
+    width: 40vw;
+    height: 100vh;
+    background-color: rgba(93, 93, 125, 0.16);
+}
+
+header {
+    margin-top: 24px;
+    text-align: center;
+    word-spacing: 41px;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+header a {
+    color: #5D5D7D;
+    text-decoration: none;
+}
+
+a:nth-child(2) {
+    opacity: 0.4;
+}
+
+img {
+    position: relative;
+    top: 25%;
+    right: 130px;
+}
+
+button {
+    height: 62px;
+    width: 269px;
+    background: #9499EA;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 1280px) { 
+    header {
+        font-size: 24px;
+    } 
+
+    img {
+        max-width: 60%;
+        right: 90px;
+    }
+    
+    h1 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 16px;
+        width: 280px;
+    }
+
+    button {
+        height: 54px;
+        width: 186px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container-left {
+        display: block;
+        padding: 0;
+        margin: 0 auto;
+        width: 100vw;
+        text-align: center;
+    }
+
+    h1, p {
+        width: 344px;
+        margin: 0 auto;
+    }
+
+    .container-right {
+        display: block;
+        width: 100vw;   
+        margin-top: 20px;     
+    }
+
+    header {
+        display: none;
+    }
+
+    img { 
+        display: block;     
+        height: 50%;
+        margin: 40px auto;
+        right: 0px;
+        top: 0px;
+    }
+    
+}
